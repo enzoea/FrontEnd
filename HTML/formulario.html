@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário HTML</title>
+</head>
+<body>
+
+    <!-- Início do formulário -->
+    <form action="/processar_formulario" method="post">
+        
+        <!-- Campo de texto para o nome -->
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+        <!-- "required" torna o preenchimento obrigatório -->
+        
+        <br>
+        
+        <!-- Campo de texto para o e-mail -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <!-- "type=email" valida automaticamente o formato do e-mail -->
+        
+        <br>
+        
+        <!-- Menu suspenso para seleção de uma opção -->
+        <label for="cidade">Cidade:</label>
+        <select id="cidade" name="cidade">
+            <option value="bh">Belo Horizonte</option>
+            <option value="sp">São Paulo</option>
+            <option value="rj">Rio de Janeiro</option>
+        </select>
+        
+        <br>
+        
+        <!-- Botões de opção -->
+        <label>Gênero:</label>
+        <input type="radio" id="masculino" name="genero" value="masculino" checked>
+        <label for="masculino">Masculino</label>
+        <input type="radio" id="feminino" name="genero" value="feminino">
+        <label for="feminino">Feminino</label>
+        
+        <br>
+        
+        <!-- Caixa de seleção (checkbox) -->
+        <input type="checkbox" id="newsletter" name="newsletter" checked>
+        <label for="newsletter">Receber Newsletter</label>
+        
+        <br>
+        
+        <!-- Botão de envio -->
+        <input type="submit" value="Enviar">
+        
+    </form>
+    <!-- Fim do formulário -->
+
+</body>
+</html>
