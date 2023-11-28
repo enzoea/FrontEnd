@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Simples</title>
+</head>
+<body>
+
+<form id="calculatorForm">
+    <label for="numero1">Digite o primeiro número:</label>
+    <input type="number" id="numero1" name="numero1" required>
+
+    <label for="numero2">Digite o segundo número:</label>
+    <input type="number" id="numero2" name="numero2" required>
+
+    <label for="operacao">Escolha a operação:</label>
+    <select id="operacao" name="operacao" required>
+        <option value="+">Adição</option>
+        <option value="-">Subtração</option>
+        <option value="*">Multiplicação</option>
+        <option value="/">Divisão</option>
+    </select>
+
+    <button type="button" onclick="calcular()">Calcular</button>
+</form>
+
+<div id="resultado"></div>
+
+<script>
+    function calcular() {
+        // Recebendo os valores inseridos no html
+        var numero1 = parseFloat(document.getElementById("numero1").value);
+        var numero2 = parseFloat(document.getElementById("numero2").value);
+        var operacao = document.getElementById("operacao").value;
+
+        var resultado;
+        switch (operacao) {
+            case "+":
+                resultado = numero1 + numero2;
+                break;
+            case "-":
+                resultado = numero1 - numero2;
+                break;
+            case "*":
+                resultado = numero1 * numero2;
+                break;
+            case "/":
+                if (numero2 !== 0) {
+                    resultado = numero1 / numero2;
+                } else {
+                    alert("Erro: Divisão por zero não é permitida!");
+                    resultado = "Indefinido";
+                }
+                break;
+            default:
+                alert("Operação inválida!");
+                resultado = "Indefinido";
+        }
+
+        document.getElementById("resultado").innerHTML = "Resultado: " + resultado;
+    }
+</script>
+
+</body>
+</html>
