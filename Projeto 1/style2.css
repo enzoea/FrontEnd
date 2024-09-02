@@ -1,0 +1,49 @@
+html {
+    background-image: url(bolo-de-cenoura-com-cobertura-de-chocolate.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+body {
+    background-color: white;
+    padding: 20px 200px;
+    margin: 0px auto;
+    opacity: 80%;
+}
+
+p {
+    font-size: 20px;
+}
+
+.section {
+    display: flex;
+}
+
+.teste1 {
+    width: 50%;
+}
+
+.teste2{
+    width: 50%;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: end;
+}
+
+nav ul li {
+    padding: 0px 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+nav img{
+    position: absolute;
+    top: 10px;
+}
