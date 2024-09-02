@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Inputs HTML</title>
+</head>
+<body>
+
+    <h1>Exemplos de Inputs em HTML</h1>
+
+    <!-- Campo de texto simples -->
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+    <br><br>
+
+    <!-- Campo para e-mail -->
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email" placeholder="Digite seu e-mail">
+    <br><br>
+
+    <!-- Campo para senha -->
+    <label for="senha">Senha:</label>
+    <input type="password" id="senha" name="senha" placeholder="Digite sua senha">
+    <br><br>
+
+    <!-- Campo para número -->
+    <label for="idade">Idade:</label>
+    <input type="number" id="idade" name="idade" min="1" max="120">
+    <br><br>
+
+    <!-- Campo para data -->
+    <label for="data">Data de Nascimento:</label>
+    <input type="date" id="data" name="data">
+    <br><br>
+
+    <!-- Campo para hora -->
+    <label for="hora">Horário de Encontro:</label>
+    <input type="time" id="hora" name="hora">
+    <br><br>
+
+    <!-- Campo para seleção de arquivo -->
+    <label for="arquivo">Escolha um arquivo:</label>
+    <input type="file" id="arquivo" name="arquivo">
+    <br><br>
+
+    <!-- Campo para telefone -->
+    <label for="telefone">Telefone:</label>
+    <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX">
+    <br><br>
+
+    <!-- Campo para URL -->
+    <label for="website">Website:</label>
+    <input type="url" id="website" name="website" placeholder="https://exemplo.com">
+    <br><br>
+
+    <!-- Caixa de seleção (Checkbox) -->
+    <label for="newsletter">Deseja receber a newsletter?</label>
+    <input type="checkbox" id="newsletter" name="newsletter">
+    <br><br>
+
+    <!-- Botões de opção (Radio Button) -->
+    <label>Gênero:</label>
+    <input type="radio" id="masculino" name="genero" value="masculino">
+    <label for="masculino">Masculino</label>
+    
+    <input type="radio" id="feminino" name="genero" value="feminino">
+    <label for="feminino">Feminino</label>
+    <br><br>
+
+    <!-- Menu de seleção (Dropdown) -->
+    <label for="cidade">Escolha sua cidade:</label>
+    <select id="cidade" name="cidade">
+        <option value="SP">São Paulo</option>
+        <option value="RJ">Rio de Janeiro</option>
+        <option value="MG">Minas Gerais</option>
+        <option value="ES">Espírito Santo</option>
+    </select>
+    <br><br>
+
+    <!-- Campo de texto multilinhas (Textarea) -->
+    <label for="mensagem">Mensagem:</label>
+    <textarea id="mensagem" name="mensagem" rows="4" cols="50" placeholder="Escreva sua mensagem aqui..."></textarea>
+    <br><br>
+
+    <!-- Botão de Enviar -->
+    <input type="submit" value="Enviar">
+
+</body>
+</html>
