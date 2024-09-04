@@ -3,7 +3,7 @@ function inserirNaTela(valor) {
     document.getElementById('display').value += valor;
 }
 
-function clearDisplay() {
+function limparTela() {
     document.getElementById('display').value = '';
 }
 
