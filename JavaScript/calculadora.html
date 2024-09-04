@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Simples</title>
+</head>
+
+<body>
+
+    <h1>Calculadora</h1>
+    
+    <input type="text" id="numero1" placeholder="Digite o 1º número">
+    <br>
+    <input type="text" id="numero2" placeholder="Digite o 2º número">
+    <br>
+    <select id="operacao">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+    </select>
+    <br>
+    <button onclick="calcular()">Calcular</button>
+    <br><br>
+    <input type="text" id="resultado" readonly placeholder="Resultado">
+
+    <script>
+        function calcular() {
+            const numero1 = parseFloat(document.getElementById('numero1').value);
+            const numero2 = parseFloat(document.getElementById('numero2').value);
+            const operacao = document.getElementById('operacao').value;
+            let resultado;
+
+            if (operacao === '+') {
+                resultado = numero1 + numero2;
+            } else if (operacao === '-') {
+                resultado = numero1 - numero2;
+            } else if (operacao === '*') {
+                resultado = numero1 * numero2;
+            } else if (operacao === '/') {
+                if (numero2 === 0) {
+                    resultado = 'Erro: Divisão por zero';
+                } else {
+                    resultado = numero1 / numero2;
+                }
+            }
+
+            // acessa o valor que está no campo nomeado como "resultado" 
+            // e altera o valor para o que está na variável resultado do js
+            document.getElementById('resultado').value = resultado;
+        }
+    </script>
+
+</body>
+</html>
