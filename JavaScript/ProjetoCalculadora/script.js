@@ -1,4 +1,3 @@
-
 function inserirNaTela(valor) {
     document.getElementById('display').value += valor;
 }
