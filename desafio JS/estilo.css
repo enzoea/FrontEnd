@@ -1,0 +1,62 @@
+
+html{
+    background-color: aliceblue;
+    
+}
+
+body {
+    text-align: center;
+    margin-top: 50px;
+    justify-content: center;
+    justify-items: center;
+    background-color: #ffffff;
+    height: 80vh;
+    width: 80vw;
+    margin: 50px auto;
+    border-radius: 20px;
+    border: 1px solid #aaaaaa
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.imagens {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.imagens .imagem1{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.imagens .imagem2{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.imagens .imagem1 img{
+    width: 200px
+}
+
+.imagens .imagem2 img{
+    width: 200px
+}
+
+#resultado {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
