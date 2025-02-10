@@ -1,0 +1,54 @@
+header{
+    background-color: blueviolet;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul{
+    display: flex;
+    list-style-type: none;
+    gap: 30px;
+    justify-content: end;
+}
+
+.section{
+    display: flex;
+    padding: 50px 200px;
+    height: 400px;
+    align-items: center;
+}
+
+.lado1{
+    width: 50%;
+}
+
+.lado2{
+    width: 50%;
+    background-color: bisque;
+}
+
+.section2{
+    display: flex;
+    padding: 50px 200px;
+    height: 400px;
+    align-items: center;
+    gap: 100px;
+    justify-content: center;
+}
+
+.card{
+    width: 300px;
+    border: solid 1px #000;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: bisque;
+}
+
+.acordeon{
+    height: 100vh;
+    padding: 0px 200px;
+}
+#teste{
+    background-color: blueviolet;
+}
